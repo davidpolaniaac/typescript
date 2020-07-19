@@ -6,7 +6,7 @@ let existe:boolean = false;
 
 // Tuplas
 let parejaHeroes:string[] = [batmanName,supermanName];
-let villano:any[] = ["Lex Lutor",5,true];
+let villano:[ string, number, boolean] = ["Lex Lutor",5,true];
 
 // Arreglos
 let aliados:string[] = ["Mujer Maravilla","Acuaman","San", "Flash"];
