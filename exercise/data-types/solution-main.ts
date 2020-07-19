@@ -12,10 +12,16 @@ let villano:[ string, number, boolean] = ["Lex Lutor",5,true];
 let aliados:string[] = ["Mujer Maravilla","Acuaman","San", "Flash"];
 
 //Enumeraciones
-let fuerzaFlash:number = 5;
-let fuerzaSuperman:number = 100;
-let fuerzaBatman:number = 1;
-let fuerzaAcuaman:number = 0;
+enum Fuerza{
+  flash,
+  batman,
+  acuaman,
+  superman
+}
+let fuerzaFlash:number = Fuerza.flash;
+let fuerzaSuperman:number = Fuerza.superman;
+let fuerzaBatman:number = Fuerza.batman;
+let fuerzaAcuaman:number = Fuerza.acuaman;
 
 // Retorno de funciones
 function actilet_batiseñal():string{
