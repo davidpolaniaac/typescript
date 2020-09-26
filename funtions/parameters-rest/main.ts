@@ -1,11 +1,13 @@
-function fullNameRest(name: string, ...other: string[]): string {
+function add(a: number, b: number): number {
 
-    return name + " " +  other.join(' ');
+    return a + b;
 }
 
-let other: string = fullNameRest('clark', 'Joseph', 'Kent');
+let myFuntion: (x:number, y:number) => number;
 
-console.log(other);
+myFuntion = add;
+
+console.log(myFuntion(2,2));
 
 
 
