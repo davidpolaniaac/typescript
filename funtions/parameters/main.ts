@@ -1,4 +1,4 @@
-function fullName(name:string, lastName:string): string {
+function fullName(name: string, lastName: string): string {
 
     return name + ' ' + lastName;
 }
@@ -6,6 +6,12 @@ function fullName(name:string, lastName:string): string {
 const fullNameHero: string = fullName('clark', 'kent');
 
 console.log(fullName);
+
+
+function fullNameOptional(name: string, lastName?: string): string {
+
+    return lastName ? name + ' ' + lastName : name;
+}
 
 
 
