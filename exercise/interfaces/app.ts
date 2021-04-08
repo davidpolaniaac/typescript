@@ -43,6 +43,10 @@ function reir( guason: Guason ):void{
 
 // Cree una interfaz para la siguiente funcion
 
+interface City {
+  (people: string[]): number;
+}
+
 function ciudadGotica( ciudadanos:string[] ):number{
   return ciudadanos.length;
 }
@@ -58,3 +62,29 @@ function ciudadGotica( ciudadanos:string[] ):number{
     - estadoCivil
     - imprimirBio(): void // en consola una breve descripcion.
 */
+
+interface IPerson {
+  name: string;
+  age: number;
+  sex: string,
+  status: string;
+  printBio() : void;
+}
+class Person implements IPerson {
+
+  name: string;
+  age: number;
+  sex: string;
+  status: string;
+
+  constructor(name: string, age: number, sex: string, status: string) {
+    this.age = age;
+    this.name = name;
+    this.sex = sex;
+    this.status = status;
+  }
+
+  printBio(): void {
+    throw new Error("Method not implemented.");
+  }
+}
