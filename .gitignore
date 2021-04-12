@@ -1,5 +1,6 @@
 # JavaScript
 *.js
+!webpack.config.js
 # Logs
 logs
 *.log
